@@ -118,6 +118,7 @@ body {
   font-weight: 300;
 }
 
+/* -- Episodes --*/
 .episodes {
   background: linear-gradient(#0000ff, #0000a3);
   clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
@@ -145,6 +146,53 @@ body {
   margin-bottom: 20px;
 }
 
+/* -- Come From -- */
+.comeFrom {
+}
+
+.comeFrom__container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.comeFrom__imageContainer {
+  position: relative;
+  width: 250px;
+  height: 500px;
+}
+
+.comeFrom__image {
+  box-sizing: border-box;
+  width: 250px;
+  height: auto;
+  background-color: white;
+  padding-bottom: 50px;
+  padding-top: 40px;
+  border: 15px solid white;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px, rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  position: absolute;
+  top: -80px;
+}
+
+.comeFrom__content {
+  width: 40%;
+  margin: 100px;
+}
+
+.comeFrom__title {
+  font-size: 3rem;
+  font-weight: 300;
+  color: var(--color-black);
+}
+
+.comeFrom__description {
+  font-family: var(--font-family-mono);
+}
+
+/* -- Stellar Guests -- */
 .stellarGuests__title {
   font-size: 3rem;
   font-weight: 300;
@@ -172,6 +220,7 @@ body {
   height: auto;
 }
 
+/* -- Themes -- */
 .themes__title {
   font-size: 3rem;
   font-weight: 300;
@@ -197,6 +246,7 @@ body {
   font-weight: 400;
 }
 
+/* -- Latest News -- */
 .latestNews {
   text-align: center;
   background: linear-gradient(#0000ff, #0000a3);
@@ -211,6 +261,7 @@ body {
   text-align: center;
 }
 
+/* -- Footer -- */
 .footer {
   padding: 20px 0;
 }
@@ -240,4 +291,73 @@ body {
 
 .footer__socialListLink:hover {
   color: var(--color-aqua);
+}
+
+@media screen and (max-width: 768px) {
+  .welcome {
+    padding-top: 20px;
+  }
+
+  .episodes {
+    padding-top: 150px;
+    padding-bottom: 250px;
+  }
+
+  .episodes__listItem {
+    width: 100%;
+  }
+
+  .comeFrom__container {
+    flex-wrap: wrap;
+  }
+
+  .comeFrom__imageContainer {
+    height: 350px;
+  }
+
+  .comeFrom__image {
+    top: -180px;
+  }
+
+  .comeFrom__content {
+    width: 100%;
+    margin: 0;
+  }
+
+  .stellarGuests__listItem {
+    width: 50%;
+  }
+
+  .themes__list {
+    flex-wrap: wrap;
+  }
+
+  .themes__listItem {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .navbar__container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .navbar__nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .themes__list {
+    flex-wrap: wrap;
+  }
+
+  .themes__listItem {
+    width: 100%;
+  }
+
+  .footer__container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
