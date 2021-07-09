@@ -1,0 +1,148 @@
+:root {
+  --font-family-mono: 'IBM Plex Mono', monospace;
+  --font-family-sans: 'IBM Plex Sans', sans-serif;
+
+  --color-black: #060a24;
+  --color-aqua: #00f3bb;
+
+  --max-width: 1200px;
+}
+
+body {
+  font-family: var(--font-family-sans);
+  color: var(--color-black);
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* -- Generics -- */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.line-through {
+  text-decoration: line-through;
+}
+
+.text-blue {
+  color: blue;
+}
+
+.btn {
+  border: 0;
+  background-color: transparent;
+  font-size: 1.2rem;
+  line-height: 3rem;
+  height: 3rem;
+  padding: 0 30px;
+  cursor: pointer;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+.btn-primary {
+  background-color: var(--color-aqua);
+}
+
+.btn-lg {
+  line-height: 1.5rem;
+}
+
+/* -- Navbar -- */
+.navbar {
+  padding: 20px 0;
+}
+
+.navbar,
+.navbar__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar__brandLink {
+  flex: 0 0 auto;
+}
+
+.navbar__brandImage {
+  width: 36px;
+  height: auto;
+}
+
+.navbar__nav {
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+  flex: 1 1 auto;
+  width: var(--max-width);
+  margin: 0;
+  padding: 0;
+}
+
+.navbar__navLink,
+.navbar__navLink:link,
+.navbar__navLink:visited,
+.navbar__navLink:active,
+.navbar__navLink:hover {
+  font-family: var(--font-family-mono);
+  color: var(--color-black);
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0 24px;
+  line-height: 1.5rem;
+  height: 1.5rem;
+}
+
+.navbar__navLink:hover,
+.navbar__navLink--active,
+.navbar__navLink--active:link,
+.navbar__navLink--active:visited,
+.navbar__navLink--active:active,
+.navbar__navLink--active:hover {
+  text-decoration: line-through;
+  color: var(--color-aqua);
+}
+
+/* -- Welcome -- */
+.welcome {
+  padding-top: 120px;
+}
+
+.welcome__title {
+  font-size: 4rem;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+
+.welcome__description {
+  font-weight: 300;
+}
+
+.episodes {
+  background: linear-gradient(#0000ff, #0000a3);
+  clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+  padding: 10% 0;
+}
+
+.episodes__title {
+  font-size: 3rem;
+  font-weight: 300;
+  color: white;
+}
+
+.episodes__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.episodes__listItem {
+  box-sizing: border-box;
+  width: 45%;
+  margin-bottom: 20px;
+}
