@@ -5,14 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Podcast</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <nav id="top" class="navbar">
       <div class="navbar__container container">
-        <a href="#top" class="navbar__brandLink"
-          ><img src="assets/logo.svg" alt="Logo: BD" class="navbar__brandImage"
-        /></a>
+        <a href="#top" class="navbar__brandLink">
+          <img src="assets/logo.svg" alt="Logo: BD" class="navbar__brandImage" />
+        </a>
 
         <ul class="navbar__nav">
           <li class="navbar__navItem">
@@ -22,11 +23,7 @@
             <a href="#aboutus" class="navbar__navLink">AboutUS</a>
           </li>
           <li class="navbar__navItem">
-            <a
-              href="#interviews"
-              class="navbar__navLink navbar__navLink--active"
-              >Interviews</a
-            >
+            <a href="#interviews" class="navbar__navLink navbar__navLink--active">Interviews</a>
           </li>
           <li class="navbar__navItem">
             <a href="#topics" class="navbar__navLink">Topics</a>
@@ -38,18 +35,17 @@
     <div class="welcome">
       <div class="welcome__container container">
         <h1 class="welcome__title">
-          Hello <span class="line-through">world</span> palle blue dot<span
-            class="text-blue"
-            >.</span
-          >
+          Hello
+          <span class="line-through">world</span>
+          palle blue dot
+          <span class="text-blue">.</span>
         </h1>
         <p class="welcome__description">
-          The podcast portal that explores the world of programming and
-          technology.<br />New episodes, every Thursday every 15 days.
+          The podcast portal that explores the world of programming and technology.
+          <br />
+          New episodes, every Thursday every 15 days.
         </p>
-        <button type="button" class="welcome__btn btn btn-lg btn-primary">
-          know more
-        </button>
+        <button type="button" class="welcome__btn btn btn-lg btn-primary">know more</button>
       </div>
     </div>
 
@@ -102,7 +98,7 @@
       </div>
     </div>
 
-    <div class="stellarGuests">
+    <div id="interviews" class="stellarGuests">
       <div class="container">
         <h1 class="stellarGuests__title">Stellar Guests</h1>
       </div>
@@ -164,5 +160,71 @@
         </li>
       </ul>
     </div>
+
+    <div id="topics" class="themes">
+      <div class="themes__container container">
+        <h1 class="themes__title">Some of our themes</h1>
+        <ul class="themes__list">
+          <li class="themes__listItem">
+            <img src="assets/icon-001-remote-work.svg" alt="Remote work" class="themes__listImage" />
+            <p class="themes__listTitle">Remote work</p>
+          </li>
+          <li class="themes__listItem">
+            <img src="assets/icon-002-rethink-programin.svg" alt="Rethinking programming" class="themes__listImage" />
+            <p class="themes__listTitle">Rethinking programming</p>
+          </li>
+          <li class="themes__listItem">
+            <img src="assets/icon-003-code-base.svg" alt="Code bases" class="themes__listImage" />
+            <p class="themes__listTitle">Code bases</p>
+          </li>
+          <li class="themes__listItem">
+            <img src="assets/icon-004-information-security.svg" alt="Informatics security" class="themes__listImage" />
+            <p class="themes__listTitle">Informatics security</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="latestNews">
+      <div class="latestNews__container container">
+        <h1 class="latestNews__title">Do you want the latest news?</h1>
+        <p>
+          <button class="latestNews__btn btn btn-lg btn-primary">Listen to the episodes</button>
+        </p>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer__container container">
+        <p class="footer__copyright">&copy; 2019 Hello blue palle dot</p>
+        <ul class="footer__socialList">
+          <li class="footer__socialListItem">
+            <a href="#" class="footer__socialListLink">
+              <i class="fa fa-spotify"></i>
+            </a>
+          </li>
+          <li class="footer__socialListItem">
+            <a href="#" class="footer__socialListLink">
+              <i class="fa fa-instagram"></i>
+            </a>
+          </li>
+          <li class="footer__socialListItem">
+            <a href="#" class="footer__socialListLink">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+          <li class="footer__socialListItem">
+            <a href="#" class="footer__socialListLink">
+              <i class="fa fa-facebook"></i>
+            </a>
+          </li>
+          <li class="footer__socialListItem">
+            <a href="#" class="footer__socialListLink">
+              <i class="fa fa-telegram"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
