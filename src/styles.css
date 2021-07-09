@@ -146,3 +146,30 @@ body {
   width: 45%;
   margin-bottom: 20px;
 }
+
+.stellarGuests__title {
+  font-size: 3rem;
+  font-weight: 300;
+  color: var(--color-black);
+}
+
+.stellarGuests__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.stellarGuests__listItem {
+  box-sizing: border-box;
+  width: 33.33333333%;
+}
+
+.stellarGuests__listImage {
+  width: 100%;
+  height: auto;
+}
