@@ -59,6 +59,7 @@ body {
 .navbar__container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .navbar__brandLink {
@@ -68,6 +69,14 @@ body {
 .navbar__brandImage {
   width: 36px;
   height: auto;
+}
+
+.navbar__navToggleBtn {
+  display: none;
+}
+
+.navbar__navToggleControl {
+  display: none;
 }
 
 .navbar__nav {
@@ -296,6 +305,58 @@ body {
 @media screen and (max-width: 768px) {
   .welcome {
     padding-top: 20px;
+  }
+
+  .navbar__container {
+    flex-wrap: wrap;
+  }
+
+  .navbar__brandLink {
+    width: 50%;
+  }
+
+  .navbar__navToggleBtn {
+    display: block;
+    width: 50%;
+    text-align: right;
+  }
+
+  .navbar__nav {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    background-color: #0000a3;
+  }
+
+  .navbar__navToggleControl:checked + .navbar__nav {
+    max-height: 200px;
+  }
+
+  .navbar__navItem {
+    width: 100%;
+  }
+
+  .navbar__navLink,
+  .navbar__navLink:link,
+  .navbar__navLink:visited,
+  .navbar__navLink:active,
+  .navbar__navLink:hover {
+    display: block;
+    color: white;
+    line-height: 3rem;
+    height: 3rem;
+  }
+
+  .navbar__navLink:hover,
+  .navbar__navLink--active,
+  .navbar__navLink--active:link,
+  .navbar__navLink--active:visited,
+  .navbar__navLink--active:active,
+  .navbar__navLink--active:hover {
+    text-decoration: line-through;
+    color: var(--color-aqua);
   }
 
   .episodes {
